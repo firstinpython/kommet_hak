@@ -17,7 +17,7 @@ time.sleep(5)
 video_mass = browser.find_elements(By.CLASS_NAME,"video_block")
 '''нахожу все элементы по книгам'''
 mass_link = []
-for i in range(10,len(video_mass)):
+for i in range(len(video_mass)):
     mass_link.append(video_mass[i].find_element(By.TAG_NAME,"a").get_attribute("href"))
     '''в элементах нахожу ссылки к каждой книге и записываю в массив'''
 for j in mass_link:
